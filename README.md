@@ -1,13 +1,13 @@
-# 🛡️ Wazuh SIEM & Elastic Stack / OpenSearch Threat Detection Lab
+#  Wazuh SIEM & Elastic Stack / OpenSearch Threat Detection Lab
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates the deployment and implementation of an enterprise-grade **Wazuh SIEM / XDR** environment integrated with **Elastic Stack / OpenSearch** for log analysis, threat hunting, and security monitoring. 
 
 The primary objective is to construct a live lab environment to monitor a Windows 10 endpoint, stream real-time system/security telemetry, and detect malicious security events (such as unauthorized authentication attempts).
 
 ---
 
-## 🏗️ Lab Architecture & Environment Specifications
+##  Lab Architecture & Environment Specifications
 
 | Component | Technology / Detail | IP Address / Identity |
 | :--- | :--- | :--- |
@@ -18,7 +18,7 @@ The primary objective is to construct a live lab environment to monitor a Window
 
 ---
 
-## 🛠️ Tools & Technologies Used
+##  Tools & Technologies Used
 * **Wazuh SIEM / XDR**: Security monitoring, rule evaluation, and endpoint integrity management.
 * **Elastic Stack / OpenSearch**: Real-time log indexing (`Wazuh Indexer`), query engine, and visual telemetry dashboards (`Wazuh Dashboard` / Kibana-like UI).
 * **PowerShell**: Command-line interface used for administrative deployment of the agent on Windows.
@@ -26,7 +26,7 @@ The primary objective is to construct a live lab environment to monitor a Window
 
 ---
 
-## 🚀 Implementation & Deployment Steps
+##  Implementation & Deployment Steps
 
 ### Step 1: Server Network & Service Verification
 1. Deployed the **Wazuh OVA** appliance on VirtualBox.
@@ -54,7 +54,7 @@ The primary objective is to construct a live lab environment to monitor a Window
 
 ---
 
-## 🔍 Security Operations & Threat Detection
+##  Security Operations & Threat Detection
 
 ### 1. Log Ingestion & Stream Analysis
 Using the **Wazuh Discover** module (powered by OpenSearch Indexing), real-time logs streamed from `win10` were parsed and mapped under the `wazuh-alerts-*` index pattern.
@@ -74,7 +74,7 @@ Using the **Wazuh Discover** module (powered by OpenSearch Indexing), real-time 
 
 ---
 
-## 🎯 Key Achievements & Findings
+##  Key Achievements & Findings
 * Successfully deployed a functional SIEM infrastructure with automated log ingestion.
 * Validated real-time event correlation between Windows endpoints and the central Indexer engine.
 * Conducted threat hunting operations using custom DQL queries and event ID filters.

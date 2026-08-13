@@ -78,9 +78,3 @@ Using the **Wazuh Discover** module (powered by OpenSearch Indexing), real-time 
 * Successfully deployed a functional SIEM infrastructure with automated log ingestion.
 * Validated real-time event correlation between Windows endpoints and the central Indexer engine.
 * Conducted threat hunting operations using custom DQL queries and event ID filters.
-
----
-
-## ⚠️ Limitations & Solution Considerations
-* **Resource Allocation**: OpenSearch indexers require sufficient memory allocation; low RAM allocation may result in index creation delays upon initial agent registration.
-* **Audit Policy Dependency**: Real-time detection of Event ID 4625 depends on active `Audit Logon Events` policies enabled on the target Windows system.
